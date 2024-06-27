@@ -6,6 +6,10 @@ ruby "3.2.1"
 gem "sinatra"
 gem "sinatra-contrib"
 
+gem "better_errors"
+gem "binding_of_caller"
+
+
 # Use Puma as the app server
 gem "puma", "~> 5.0"
 
