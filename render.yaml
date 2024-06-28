@@ -1,11 +1,7 @@
-# Exported from Render on 2024-06-28T14:45:43Z
 services:
-- type: web
-  name: calculatrices
-  runtime: ruby
-  repo: https://github.com/Candide23/sinatra-omnicalc-2
-  plan: free
-  region: oregon
-  buildCommand: ./bin/render-build.sh
-  startCommand: ./bin/render-start.sh
-version: "1"
+  - type: web
+    name: calculatrices # the name of this service, eg hello-world
+    env: ruby # this app is written in ruby
+    plan: free # make sure to set this to free or you'll get billed $$$
+    buildCommand: "./bin/render-build.sh" # we already created these two files for you
+    startCommand: "./bin/render-start.sh" 
